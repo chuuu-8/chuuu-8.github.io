@@ -30,8 +30,8 @@ select {
     font-size: 1.1rem; /* 設定下拉選單的字型大小為 1.1rem */
     color: #000000; /* 設定文字顏色為深灰色 */
     position: absolute; /* 設定語言選擇框絕對定位 */
-    top: 10px; /* 設定語言選擇框距離頁面頂部 10px */
-    right: 10px; /* 設定語言選擇框距離頁面右側 10px */
+    top: 10px; /* 設定語言選擇框距離頁面頂部 */
+    right: 10px; /* 設定語言選擇框距離頁面右側 */
 }
 
 /* 顯示現在時間區塊 */
@@ -139,7 +139,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-    background-color: #66DD00; /* 當開關被選中時，背景顏色變為綠色 */
+    background-color: #00DD00; /* 當開關被選中時，背景顏色變為綠色 */
 }
 
 input[type="checkbox"]:before {
@@ -205,4 +205,14 @@ body.light-mode #modeToggleBtn {
 body.light-mode #setButton {
     background-color: #00BBFF; 
     transition: background-color 0.3s ease;
+}
+
+/* 淺色模式下的設定鬧鐘區塊 */
+body.light-mode #alarmSettings {
+    background-color: #DDDDDD; /* 設定為淺灰色 */
+}
+
+/* 淺色模式下的鬧鐘列表 */
+body.light-mode #alarmList li {
+    background-color: #DDDDDD; /* 設定為淺灰色 */
 }
